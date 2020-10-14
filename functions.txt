@@ -1,0 +1,25 @@
+#include "std.h"
+#include "de.c"
+#define num 1
+
+function Node(value,value2)
+{
+	function hello(x) {
+		var b = x * x;
+		println(b);
+	}
+	return hello;
+}
+function func(x,y,z)
+{
+	function funky(x,y,z) {
+		return x*y*z;
+	}
+	return funky(x,y,z);
+}
+function main()
+{ 
+	var a = Node("hello", "there");
+	a(40);
+	println( func(2,4,6) );
+}

@@ -1,0 +1,50 @@
+Ticorrian Heard
+
+helper functions:
+print: print in format: var val
+printupdate: print in format updated var to new val 
+sameVar: checks if theyre the same variablesameType: checks if theyre the same type
+resetVal: set a new val for update
+display: display entire environment
+
+insert{
+	*retrieve table from desired environment
+	*set the variable side in table 
+	*set the value side in table
+	*return the value 
+}
+
+update
+{
+	*retrieve table from desired environment
+	*set var to left side of table
+	*set vals to right side of table
+	*traverse list
+	*if variable == ID(left node of current vars) send
+		set the new lexeme
+	*else taverse further
+	* if its not found in the current table move onto the next
+		table
+	*if the variable isnt found in any table output undefined error 
+
+}
+
+lookup
+{
+	*retrieve table from desired environment
+	*set var to left side of table
+	*set vals to right side of table
+	*traverse list
+	*if variable == ID(left node of current vars) send
+		return the found lexeme
+	*else taverse further
+	* if its not found in the current table move onto the next
+		table
+	*if the variable isnt found in any table output undefined error 
+}
+
+extend{
+	print out confirmation message 
+	attach var list and val list (frist 2 parameters)
+	to 3rd parameter and make a new environment
+}

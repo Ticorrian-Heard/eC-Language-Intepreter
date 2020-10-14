@@ -1,0 +1,23 @@
+#include "std.h"
+#include "de.c"
+#define num 1
+
+function nfact(x)
+{
+   var fact = 1;
+   while (x > 0){
+   	fact = fact * x;
+   	--x;
+   }
+ return fact;
+}
+function main()
+{ 
+	var a = nfact(1);
+	var b = nfact(5);
+	var c = nfact(10);
+
+	println(a);
+	println(b);
+	println(c);
+}

@@ -1,0 +1,13 @@
+#include "std.h"
+#include "de.c"
+#define num 1
+
+function Node(value,value2)
+{
+	return this;
+}
+function main()
+{ 
+	var a = Node("hello", "there");
+	println(a->value, " ", a->value2);
+}

@@ -1,0 +1,49 @@
+#include "std.h"
+#include "de.c"
+#define tre 1
+
+function main()
+{
+  println("THIS IS TEST1 OF MY DOPE DPL, DynaC!");
+
+   println("Here simple arithmetic using command line arguments");
+   var a = argc();
+   ++a;
+   println(a);
+   var b;
+   a += b; 
+   println(a);
+
+   if (argc() != b) {
+         println(argv(0));
+   } 
+
+
+   if (argc() == 1){
+      println(argv(0));
+   }    
+
+   else if (argc() == 2){
+         println(argv(0), " ", argv(1));
+   }
+   
+   else {
+         var i = 0;
+         while(i < argc() - 1) {
+               print(argv(i), " ");
+               ++i;
+         }
+   }
+
+   FILE *fp = fopen("input.txt","r");
+   
+   //THE REVOLUTION WILL NOT BE TELEVISED
+
+   println(readInt(fp));   
+   println(readString(fp));
+   println(readLine(fp));
+
+   var showoff = "just showing off ;)";
+   println("At ", readString(fp), " ", readString(fp), " I'm ", showoff );
+   fclose(fp);
+}

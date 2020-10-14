@@ -1,0 +1,20 @@
+#include "std.h"
+#include "de.c"
+#define num 1
+
+function lam(x)
+{
+	return lambda(x){
+		println("This is a lambda test ", x, "!");
+		return lambda(x,y){
+			return x+y;
+		};
+	};
+}
+function main()
+{ 
+	var a = lam(1);
+	var b = a(10);
+	var x = b(10,90);
+	println(x);
+}
