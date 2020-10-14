@@ -1,4 +1,4 @@
-# eC---Language-Intepreter
+# eC-Language-Intepreter
 
 ***Author Ticorrian Heard
 -------------------------
